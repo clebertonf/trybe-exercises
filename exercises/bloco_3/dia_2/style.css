@@ -1,0 +1,25 @@
+h1 {
+    font-family: sans-serif;
+}
+p {
+    font-weight: 600;
+    font-size: 35px;
+}
+body {
+    font-size: 16px;
+}
+.lista{
+    font-style: italic;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
