@@ -1,0 +1,56 @@
+body{
+    background-color: slategrey;
+}
+#header_1{
+    background-color:rgb(154, 194, 235);
+    height: 80px;
+    border:3px solid slategrey;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#nav{
+    text-align: center;
+    
+}
+
+ li {
+    display: inline;
+    margin: 90px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#article{
+margin-top: 50px;    
+
+}
+
+section{
+    margin: 15px;
+   
+}
+
+img{
+    border-radius: 20px;
+}
+
+#aside{
+    
+    
+}
+
+h3 {
+    padding: 20px;
+}
+
+footer{
+    background-color: rgb(154, 194, 235);
+    height: 50px;
+    border: 10px solid slategrey;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
