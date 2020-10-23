@@ -1,5 +1,5 @@
 
-
+//Exercicio 01 operadores aritimeticos 
 let a = 10, b = 2;
 
 //Adição
