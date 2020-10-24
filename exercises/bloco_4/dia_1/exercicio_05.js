@@ -1,6 +1,6 @@
 // Exercicio 05 angulos de um triangulo
 
-let ang1 = 60, ang2 = 60 , ang3 = 60;
+let ang1 = 60 , ang2 = 60 , ang3 = 60;
 
 if ((typeof ang1 !='number') || (typeof ang2 != 'number') || (typeof ang3 != 'number')){
     console.log('ERRO, algum angulo e invalido!'); 
@@ -11,6 +11,5 @@ if ((typeof ang1 !='number') || (typeof ang2 != 'number') || (typeof ang3 != 'nu
     }else{
         console.log("False")
     }
-
 }
 
