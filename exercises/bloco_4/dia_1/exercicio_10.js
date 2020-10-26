@@ -11,11 +11,3 @@ if (custoProdutoInicial <= 0 || valorVenda  <= 0 || quantidadeVenda <= 0){
     lucro = (valorVenda - custoFinal) * quantidadeVenda;
     console.log(lucro);
 }
-
-
-
-
-
-
-
-
