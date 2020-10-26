@@ -1,4 +1,4 @@
-let nota = -96;
+let nota = 95;
 
 if (nota < 0 || nota > 100){
     console.log("ERRO, nota invalida esta fora do intervalo, e menor que zero ou maior que 100!");
