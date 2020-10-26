@@ -13,5 +13,4 @@ if ((number1 % 2 == 0) || (number2 % 2 == 0) || (number3 % 2 ==0)){
 let number1 = 11, number2 = 10, number3 = 10;
 let retorno;
 
-retorno = (number1 % 2 ==0 || number2 %2 ==0 || number3 %2 ==0) ? "true" : "false";
-console.log(retorno)
+console.log (retorno = (number1 % 2 ==0 || number2 %2 ==0 || number3 %2 ==0) ? true : false);
