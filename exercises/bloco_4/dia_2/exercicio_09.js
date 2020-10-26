@@ -3,7 +3,7 @@ Utilizando o array criado no exercício anterior imprima o resultado da divisão
 um dos elementos por 2.
 */
 let numbers = [];
-
+let divisao = 0;
 
 for (let valor =0; valor<=25; valor++){
     numbers.push(valor);
