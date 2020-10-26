@@ -1,5 +1,5 @@
 
-let peca = "Rei";
+let peca = "Cavalo";
 let minuscula = peca.toLocaleLowerCase();
 
 switch (minuscula){
@@ -20,7 +20,7 @@ switch (minuscula){
         break;
     case "peao":
         console.log("O peão movimenta-se apenas uma casa para frente e somente captura outras peças na diagonal. Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo.");
-    break;
+        break;
 
     default:
         console.log("Digite apenas nome de peças de xadrez");
