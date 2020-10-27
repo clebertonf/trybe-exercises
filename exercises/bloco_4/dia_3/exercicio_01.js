@@ -10,7 +10,7 @@ n = 5
 *****
 */
 
-let num = 10;
+let num = 5;
 let asteriscoLinha = "*";
 let linha = "";
 
