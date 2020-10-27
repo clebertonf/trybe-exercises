@@ -14,10 +14,10 @@ let num = 5;
 let asteriscoLinha = "*";
 let linha = "";
 
-for (let index =0; index < num; index ++){
+for (let index = 0; index < num; index++) {
     linha = linha + asteriscoLinha;
 }
 
-for (let index2 = 0; index2 < num; index2++){
+for (let index2 = 0; index2 < num; index2++) {
     console.log(linha);
 }
