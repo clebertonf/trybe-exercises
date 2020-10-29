@@ -1,11 +1,14 @@
 
-//Exercicio 03 qual dos tres numeros e maior
-let number1 = 100, number2 = 7000, number3 = 8500;
+//Exercicio 03 qual dos tres numeros e maior utilizando funçoes 
 
-if ((number1 > number2) && (number1 > number3)){
-    console.log(number1, "é maior!")
-}else if ((number2 > number1) && (number2 > number3)){
-    console.log(number2,"e maior!");
-}else {
-    console.log(number3, "e maior!")
+maior_numero(100,40,30);
+
+function maior_numero(number1,number2,number3){
+    if (number1 > number2 && number1 > number3){
+        console.log(number1, "e maior");
+    }else if (number2 > number1 && number2 > number3){
+        console.log(number2, "e maior");
+    }else{
+        console.log(number3, "e maior");
+    }
 }
