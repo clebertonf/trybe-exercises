@@ -1,10 +1,10 @@
 /*
-Faça um for/in que mostre todas as chaves do objeto.
+Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto.
 Valor esperado no console:
-  personagem
-  origem
-  nota
-  recorrente
+Margarida
+  Pato Donald
+  Namorada do personagem principal nos quadrinhos do Pato Donald
+  Sim
 */
 
 let info = {
@@ -16,5 +16,5 @@ let info = {
 info['recorrente'] = 'Sim';
 
 for (key in info){
-    console.log(key);
+    console.log(info[key]);
 }
