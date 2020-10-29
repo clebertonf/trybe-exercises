@@ -10,8 +10,10 @@ if ((number1 % 2 == 1) || (number2 % 2 == 1) || (number3 % 2 == 1)){
 
 //Codigo refatorado
 
-let number1 = 11, number2 = 10, number3 = 10;
-let retorno;
+impar(11,20,40);
 
-retorno = (number1 % 2 ==1 || number2 %2 ==1 || number3 %2 ==1) ? "true" : "false";
-console.log(retorno)
+function impar(number1,number2,number3){
+    let retorno;
+    retorno = (number1 % 2 ==1 || number2 %2 ==1 || number3 %2 ==1) ? "true" : "false";
+    console.log(retorno)
+}
