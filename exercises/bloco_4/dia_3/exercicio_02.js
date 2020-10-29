@@ -1,4 +1,5 @@
-let num = 5;
+
+let num = 7;
 let asteriscoLinha = "*";
 let linha = "";
 
