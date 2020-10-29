@@ -10,7 +10,9 @@ if ((number1 % 2 == 0) || (number2 % 2 == 0) || (number3 % 2 ==0)){
 
 //Codigo refatorado
 
-let number1 = 11, number2 = 10, number3 = 10;
-let retorno;
+par(18,13,19);
 
-console.log (retorno = (number1 % 2 ==0 || number2 %2 ==0 || number3 %2 ==0) ? true : false);
+function par(number1,number2,number3){
+    let retorno;
+    console.log (retorno = (number1 % 2 ==0 || number2 %2 ==0 || number3 %2 ==0) ? true : false);
+}
