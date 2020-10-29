@@ -16,7 +16,7 @@ let symbol = "*";
 
 for (let line =0; line < middle; line+= 1){
     let output = "";
-    for (let col =1; col < n; col +=1){
+    for (let col =1; col <= n; col +=1){
         if (col < controlLeft || col > controlright){
             output += " ";
         }else {
