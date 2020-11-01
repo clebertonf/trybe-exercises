@@ -7,15 +7,19 @@ Valor esperado no retorno da função: 6.
 
 array = [2, 4, 6, 7, 10, 0, -3];
 
-let menor = 0;
-let indice = 0;
+function indiceMenor(array) {
+    let menor = 0;
+    let indice = 0;
 
-for (let key in array){
-    if (array[key] < menor){
-        menor = array[key];
-        indice = key;
+    for (let key in array) {
+        if (array[key] < menor) {
+            menor = array[key];
+            indice = key;
+        }
     }
+
+    console.log('Menor ' + menor);
+    console.log('Indice ' + indice);
 }
 
-console.log('Menor ' + menor);
-console.log('Indice ' + indice );
+indiceMenor(array);
