@@ -4,8 +4,3 @@ Array de teste: [2, 3, 2, 5, 8, 2, 3];.
 Valor esperado no retorno da função: 2.
 */
 
-let array = [2, 3, 2, 5, 8, 2, 3];
-
-for (let x in array){
-    console.log(array[x]);
-}
