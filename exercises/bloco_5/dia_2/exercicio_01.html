@@ -60,20 +60,23 @@
     <script> 
       // COLOQUE SEU CÓDIGO AQUI 
       //01  
-      let recuperado = document.querySelector('body').parentNode;
+      let recuperado = document.querySelector('body');
       let elementoNovo = document.createElement('h1');
       let conteudo = document.createTextNode('Exercício 5.2 - JavaScript DOM')
       elementoNovo.appendChild(conteudo);
       recuperado.appendChild(elementoNovo);
      
       //02
-      let recuperadoBody = document.querySelector('body').parentNode;
+      let recuperadoBody = document.querySelector('body');
       elementoNovoDiv = document.createElement('div');
       elementoNovoDiv.className = 'main-content';
       recuperadoBody.appendChild(elementoNovoDiv);
 
       //03
-      
+      let recuperadoH1 = document.querySelector('h1').nextSibling;
+      elementoNovoDiv2 = document.createElement('div');
+      elementoNovoDiv2.className = 'center-content';
+      recuperadoH1.appendChild(elementoNovoDiv2);
 
     </script>
   </body>
