@@ -60,6 +60,11 @@ function listenerButton(){
 
 function actionButton(){
     //funçao para pintar fundo de outra cor
-
+    let feriados = document.querySelectorAll('.holiday');
+    for (let x=0; x <feriados.length; x++){
+        let feri = feriados[x];
+        feri.style.backgroundColor='white';
+    }
+}
 listenerButton();
 
