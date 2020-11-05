@@ -51,5 +51,15 @@ function button (feriados){
 
 button('feriados');
 
+//03
 
+function listenerButton(){
+    let recoverButton =document.querySelector('#btn-holiday')
+    recoverButton.addEventListener('click', actionButton );
+}
+
+function actionButton(){
+    //funçao para pintar fundo de outra cor
+
+listenerButton();
 
