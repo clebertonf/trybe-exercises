@@ -38,3 +38,18 @@ function insertDays() {
 }
 
 insertDays()
+
+//02
+
+function button (feriados){
+    let recover = document.querySelector('.buttons-container');
+    let newButton = document.createElement('button');
+    newButton.id = 'btn-holiday';
+    newButton.innerHTML = feriados
+    recover.appendChild(newButton);
+}
+
+button('feriados');
+
+//03
+
