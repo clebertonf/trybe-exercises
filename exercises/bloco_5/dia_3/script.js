@@ -103,7 +103,29 @@ function ChangeNameDay(){
     }
 
 }
-
-
-
 ChangeNameDay();
+
+//06
+
+let days = document.querySelector('#days');
+function zoom (){
+    days.addEventListener('mouseover', function(event){
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = 'bold';
+    });
+    
+}
+
+function outZom (){
+    days.addEventListener('mouseout', function(event){
+        event.target.style.fontSize = '20px';
+        event.target.style.fontWeight = 'normal';
+    })
+}
+
+zoom();
+outZom();
+
+//07
+
+ 
