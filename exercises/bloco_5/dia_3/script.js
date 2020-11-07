@@ -168,3 +168,21 @@ myTask('Cozinhar');
         })
     }
  addevent();
+
+ //10
+
+ function addAssignment(){
+     days.addEventListener('click', function(event){
+         let recoveredElement = document.querySelector('.selected');
+         if (recoveredElement != null){
+             if (event.target.style.color === recoveredElement.style.backgroundColor){
+                 event.target.style.color = '';
+             }else{
+                 event.target.style.color = recoveredElement.style.backgroundColor;
+             }
+         }
+     });
+     
+ }
+
+ addAssignment();
