@@ -184,5 +184,25 @@ myTask('Cozinhar');
      });
      
  }
-
  addAssignment();
+
+ //Bonus
+
+ function addCompr(){
+     let botao = document.querySelector('#btn-add');
+     let compromisso = document.querySelector('.task-list');
+     let compromissoEscrito = document.querySelector('#task-input');
+     let li = document.createElement('li');
+
+     li.className = 'li-task'
+     compromisso.appendChild(li);
+     let recuperadoLi = document.querySelector('.li-task');
+     
+     botao.addEventListener('click', function (){
+        
+        recuperadoLi.innerText=compromissoEscrito.value;
+        
+     });
+ }
+
+ addCompr();
