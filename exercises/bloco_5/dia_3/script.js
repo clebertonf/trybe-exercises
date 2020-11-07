@@ -41,30 +41,69 @@ insertDays()
 
 //02
 
-function button (feriados){
+function button (name){
     let recover = document.querySelector('.buttons-container');
     let newButton = document.createElement('button');
     newButton.id = 'btn-holiday';
-    newButton.innerHTML = feriados
+    newButton.innerHTML = name
     recover.appendChild(newButton);
 }
 
-button('feriados');
+button('Feriados');
 
 //03
 
-function listenerButton(){
-    let recoverButton =document.querySelector('#btn-holiday')
-    recoverButton.addEventListener('click', actionButton );
-}
+function ChangeColorHolidays(){
 
-function actionButton(){
-    //funçao para pintar fundo de outra cor
-    let feriados = document.querySelectorAll('.holiday');
-    for (let x=0; x <feriados.length; x++){
-        let feri = feriados[x];
-        feri.style.backgroundColor='white';
+    const button = document.querySelector('#btn-holiday');
+    const holidays = document.querySelectorAll('.holiday');
+
+    button.addEventListener('click', changeColor);
+
+    function changeColor(){
+        for (let index =0; index < holidays.length; index++){
+
+            if (holidays[index].style.backgroundColor === 'white'){
+                holidays[index].style.backgroundColor = '#47DBE7'
+            }else{
+                holidays[index].style.backgroundColor = 'white'
+            }
+        }
     }
-}
-listenerButton();
+    }
+ChangeColorHolidays();
 
+//04
+
+function NameButon(string){
+    let div = document.querySelector('.buttons-container');
+    let button = document.createElement('button');
+    button.innerText = string;
+    button.id = 'btn-friday';
+    div.appendChild(button);    
+}
+NameButon('Sexta-Feira');
+
+//05
+
+function ChangeNameDay(){
+    let button = document.querySelector('#btn-friday');
+    button.addEventListener('click', changeSexta);
+
+    function changeSexta(){
+            let sextas = document.querySelectorAll('.friday');
+            for (let index = 0; index < sextas.length; index++){
+                if (sextas[index].innerText === 'SEXTOU!'){
+                    sextas[index].innerText =  parseInt(sextas[index].previousElementSibling.innerText) +1;
+                }else{
+                    sextas[index].innerText = 'SEXTOU!'
+                }
+                
+            }  
+    }
+
+}
+
+
+
+ChangeNameDay();
