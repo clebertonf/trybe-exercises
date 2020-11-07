@@ -140,4 +140,15 @@ myTask('Cozinhar');
 
 //08
 
- 
+
+ function subtitle (cor){
+    let newElement = document.createElement('div');
+    newElement.className = 'task';
+    newElement.style.backgroundColor = cor;
+
+    divMyTasks.appendChild(newElement);
+ }
+
+ subtitle('blue');
+
+ //09
