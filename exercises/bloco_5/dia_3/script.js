@@ -128,4 +128,16 @@ outZom();
 
 //07
 
+let divMyTasks = document.querySelector('.my-tasks');
+
+function myTask(tarefas){
+    let newElement = document.createElement('span');
+    newElement.innerText = tarefas;
+    divMyTasks.appendChild(newElement);
+}
+
+myTask('Cozinhar');
+
+//08
+
  
