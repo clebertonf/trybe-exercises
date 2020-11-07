@@ -149,6 +149,22 @@ myTask('Cozinhar');
     divMyTasks.appendChild(newElement);
  }
 
- subtitle('blue');
+ subtitle('pink');
 
  //09
+
+ function addevent (){
+    
+       
+        let task = document.querySelector('.task');
+
+        task.addEventListener('click', function(event){
+            let recoveredElement = document.querySelector('.selected');
+            if (recoveredElement == null){
+                event.target.className = 'task selected'
+            }else{
+                event.target.className = 'task'
+            }
+        })
+    }
+ addevent();
