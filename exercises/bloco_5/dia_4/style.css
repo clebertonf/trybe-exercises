@@ -12,6 +12,7 @@ body{
     padding: 50px;
     background-color: #e4e8ec;
     border-radius: 10px;
+    
 }
 
 #secao-leitura{
@@ -20,3 +21,12 @@ body{
     padding: 25px;
     border-radius: 10px;
 }
+
+#configuracoes {
+    padding: 20px;
+}
+
+#configuracoes h2 {
+    color: white;
+}
+
