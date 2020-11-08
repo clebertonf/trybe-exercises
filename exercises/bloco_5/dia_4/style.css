@@ -1,3 +1,22 @@
-body {
+* {
+    margin: 0px;
     
+}
+
+body{
+    background-color: white;
+    background-image: url(livro.jpg);
+}
+#cabecalho{
+    text-align: center;
+    padding: 50px;
+    background-color: #e4e8ec;
+    border-radius: 10px;
+}
+
+#secao-leitura{
+    margin: 150px;
+    background-color: #e4e8ec;
+    padding: 25px;
+    border-radius: 10px;
 }
