@@ -1,0 +1,26 @@
+*{
+    margin: 0px
+}
+body {
+    background-color: #e4e8ec;
+}
+
+.dados-pessoais{
+    background-color: darkgray;
+    width: 50%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+#header{
+    background-color: darkgrey;
+    border-style: solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#botoes {
+    margin-top: 8px;
+}

@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header id="header">
+        <h3>Cadastro de Currículo</h3>
+    </header>
+
+    <main>
+
+        <section class="dados-pessoais">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>Nome:</p>
+                <input type="text" name="" class="pessoa" required maxlength="40">
+
+                <p>E-mail:</p>
+                <input type="email" name="" class="pessoa" required maxlength="50">
+
+                <p>CPF:</p>
+                <input type="text" name="" class="pessoa" required maxlength="11" placeholder="Ex.: 000.000.000-00">
+
+                <p>Endereço:</p>
+                <input type="text" name="" class="pessoa" required maxlength="200">
+
+                <p>Cidade:</p>
+                <input type="text" name="" class="pessoa" required maxlength="28">
+
+                <p>Estado:</p>
+                <select id="estado" class="pessoa" required>
+                </select>
+                <br>
+                <br>
+
+                <p>Tipo</p>
+                <input type="radio" class="pessoa" name="casa-ap" value="casa">
+                <label for="casaValue">casa</label>
+                <br>
+                <input type="radio" id="casaValue1"  name="casa-ap" value="apartamento">
+                <label for="casaValue1">Apartamento</label>
+            </fieldset>
+            <hr><br>
+        </section>
+        <section class="dados-pessoais">
+            <fieldset>
+                <legend>Dados do ultimo emprego</legend>
+                <p>Cargo</p>
+                <input type="text" class="pessoa" maxlength="40" required>
+
+                <p>Descrição do cargo</p>
+                <textarea name="" class="pessoa" cols="21" rows="5"></textarea>
+
+                <p>Data de inicio</p>
+                <input type="date" id="data" class="pessoa">
+                <br><br>
+
+                <p>Resumo do currículo</p>
+                <textarea name="" class="pessoa" cols="30" rows="10" maxlength="1000" required></textarea>
+            </fieldset>
+            <section class="dados-pessoais">
+                <button id="montar-cr">Montar Currículo</button>
+                <button id="limpar">Limpar tudo</button>
+            </section>
+        </section>
+
+        <section class="dados-pessoais">
+            <fieldset>
+                <legend>Currículo</legend>
+                <div id="curriculo">
+                   
+                  
+                </div>
+            </fieldset>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
