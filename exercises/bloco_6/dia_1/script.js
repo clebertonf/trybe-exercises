@@ -1,3 +1,5 @@
+//Falta validar algumas coisas de acorod com exercicio
+
 let estadosBr = [
     '',
     'AC - Acre',
