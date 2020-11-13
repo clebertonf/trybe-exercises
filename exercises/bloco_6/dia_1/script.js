@@ -1,4 +1,5 @@
 let estadosBr = [
+    '',
     'AC - Acre',
     'AL - Alagoas',
     'AP - Amapá',
@@ -40,31 +41,32 @@ dropDown(estadosBr);
 
 
 
-    function montaCurriculo() {
-        let botaoMontarCr = document.querySelector('#montar-cr');
-    
-        botaoMontarCr.addEventListener('click', function () {
-            let dados = document.querySelectorAll('.pessoa');
-            for (let x = 0; x < dados.length; x += 1) {
-                
-                let div = document.querySelector('#curriculo')
-                let p = document.createElement('p');
-                p.innerText = dados[x].value;
-                div.appendChild(p);
-            }
-        });
-    }
-    
-    montaCurriculo();
-    
+function montaCurriculo() {
+    let botaoMontarCr = document.querySelector('#montar-cr');
+
+    botaoMontarCr.addEventListener('click', function () {
+        let dados = document.querySelectorAll('.pessoa');
+        for (let x = 0; x < dados.length; x += 1) {
+
+            let div = document.querySelector('#curriculo')
+            let p = document.createElement('p');
+            p.innerText = dados[x].value;
+            div.appendChild(p);
+            dados[x].value = '';
+        }
+    });
+}
+
+montaCurriculo();
 
 
-function clear(){
+
+function clear() {
     let button = document.querySelector('#limpar');
-    button.addEventListener('click', function(){
-        let div = document.querySelector('#curriculo')
-        div.remove();
-        
+    button.addEventListener('click', function () {
+
+       let div = document.querySelector('#curriculo');
+       div.remove();
     });
 }
 
