@@ -38,23 +38,69 @@ function comobobox(states) {
         inputEstado.appendChild(option);
     }
 }
+
 comobobox(estados)
 
+let montarCv = document.querySelector('#submit');
+
 function validDate() {
-    let botaoEnviar = document.querySelector('#submit');
 
-    botaoEnviar.addEventListener('click', function (event) {
+    let data = document.querySelector('#data-inicio').value;
+    let dataArray = data.split('/');
+    let dia = parseInt(dataArray[0]);
+    let mes = parseInt(dataArray[1]);
+    let ano = parseInt(dataArray[2]);
+
+    if (!(dia > 0 && dia <= 31 && mes > 0 && mes < 12 && ano > 0)) {
+        return 'Erro na formataçao da data';
+    }
+    return '';
+}
+function validadDados() {
+    montarCv.addEventListener('click', function (event) {
         event.preventDefault();
-        let data = document.querySelector('#data-inicio').value;
-        let dataArray = data.split('/');
-        let dia = parseInt(dataArray[0]);
-        let mes = parseInt(dataArray[1]);
-        let ano = parseInt(dataArray[2]);
-
-        if (!(dia > 0 && dia <= 31 && mes > 0 && mes < 12 && ano > 0)) {
-            alert('Erro na formataçao da data')
+        validDate();
+        let erro;
+        let erros = '';
+        erro = validDate();
+        let inputText = document.querySelectorAll('input[type=text]');
+        if (erro != '') {
+            erros += `${erro}\n`;
         }
+
+        for (let index = 0; index < inputText.length; index += 1) {
+            let input = inputText[index];
+            if (input.required) {
+                if (input.value === '') {
+                    erros += `O campo ${input.name} é obrigatorio\n`;
+                }
+                if (input.minlength && input.value.length < input.minlength) {
+                    erros += `O campo ${input.name} deve possuir no minimo ${input.minlength} caracteres\n`;
+                }
+            }
+        }
+        alert(erros)
     });
 }
-validDate();
+validadDados();
 
+function createCurr(){
+    let montarCv = document.querySelector('#submit');
+    montarCv.addEventListener('click', function(){
+        let inputText = document.querySelectorAll('input[type=text]');
+
+        for (let index =0; index < inputText.length; index +=1){
+            let section = document.querySelector('#curriculo')
+            let p =  document.createElement('p');
+
+            section.appendChild(p).innerText = inputText[index].value;
+        }
+
+    });
+
+}
+createCurr()
+
+function clear (){
+    
+}
