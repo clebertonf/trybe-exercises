@@ -34,8 +34,28 @@
                 <select name="estado" id="input-estado" required>
                     <option value="" disabled selected>Selecione um estado</option>
                 </select>
-
+                <br><br>
+                <p>Moradia</p>
+                <input type="radio" id="input-casa" name="moradia" value="casa" checked>
+                <label for="input-casa">Casa</label>
+                <input type="radio" id="input-apartamento" name="moradia" value="apartamento">
+                <label for="input-apartamento">Apartamento</label>
             </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados do ultimo emprego</legend>
+                <p>Resumo do curriculo</p>
+                <textarea name="curriculo" id="input-dados-emprego" cols="30" rows="10" maxlength="1000" required></textarea>
+                    <br><br>
+                <label for="input-nome">Cargo</label>
+                <input name="nome" id="input-cidade" type="text" maxlength="40" required>
+                <p>Descrição do Cargo</p>
+                <textarea name="curriculo" id="input-dados-emprego" cols="30" rows="10" maxlength="500" required></textarea>
+                <br><br>
+                <label for="data-inicio">Data Inicio</label>
+                <input type="text" id="data-inicio" name="" maxlength="10" required >
+            </fieldset>
+            <button id="submit" type="submit">Enviar</button>
         </form>
     </main>
 

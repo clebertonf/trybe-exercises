@@ -40,3 +40,21 @@ function comobobox(states) {
 }
 comobobox(estados)
 
+function validDate() {
+    let botaoEnviar = document.querySelector('#submit');
+
+    botaoEnviar.addEventListener('click', function (event) {
+        event.preventDefault();
+        let data = document.querySelector('#data-inicio').value;
+        let dataArray = data.split('/');
+        let dia = parseInt(dataArray[0]);
+        let mes = parseInt(dataArray[1]);
+        let ano = parseInt(dataArray[2]);
+
+        if (!(dia > 0 && dia <= 31 && mes > 0 && mes < 12 && ano > 0)) {
+            alert('Erro na formataçao da data')
+        }
+    });
+}
+validDate();
+
