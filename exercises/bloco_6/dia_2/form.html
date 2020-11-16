@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
     <link rel="stylesheet" href="styles/bulma.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link href="validation.min.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -21,27 +22,27 @@
         <section class="dados-pessoais">
             <div class="field">
                 <div class="control">
-                    <form action="">
+                    <form action="" >
                         <h1 class="subtitle is-6">Dados Pessoais</h1>
                         <p>Nome:</p>
-                        <input type="text" name="" class="pessoa input " required maxlength="40">
+                        <input type="text" name="nome" class="pessoa input "  maxlength="40" class = "form__input form-control" data-validate-field ='nome'>
 
                         <p>E-mail:</p>
-                        <input type="email" name="" class="pessoa input" required maxlength="50">
+                        <input type="email" name="" class="pessoa input"  maxlength="50">
 
                         <p>CPF:</p>
-                        <input type="text" name="" class="pessoa input" required maxlength="11"
+                        <input type="text" name="" class="pessoa input"  maxlength="11"
                             placeholder="Ex.: 000.000.000-00">
 
                         <p>Endereço:</p>
-                        <input type="text" name="" class="pessoa input" required maxlength="200">
+                        <input type="text" name="" class="pessoa input"  maxlength="200">
 
                         <p>Cidade:</p>
-                        <input type="text" name="" class="pessoa input" required maxlength="28">
+                        <input type="text" name="" class="pessoa input"  maxlength="28">
 
 
                         <p>Estado:</p>
-                        <select id="estado" class="pessoa select input" required>
+                        <select id="estado" class="pessoa select input" >
                         </select>
                         <br>
                         <br>
@@ -65,17 +66,18 @@
                 <br>
                 <div class="control">
                     <p>Cargo</p>
-                    <input type="text" class="pessoa input" maxlength="40" required>
+                    <input type="text" class="pessoa input" maxlength="40" >
 
                     <p>Descrição do cargo</p>
                     <textarea name="" class="pessoa textarea" cols="21" rows="5"></textarea>
 
-                    <p>Data de inicio</p>
-                    <input type="date" id="data" class="pessoa input">
-                    <br><br>
-
                     <p>Resumo do currículo</p>
-                    <textarea name="" class="pessoa textarea" cols="30" rows="10" maxlength="1000" required></textarea>
+                    <textarea name="" class="pessoa textarea" cols="30" rows="10" maxlength="1000" ></textarea>
+                    <p>Data de inicio</p>
+                    <input type="text" id="data" class="pessoa input" >
+                    <br>
+
+                    
                 </div>
             </div>
 
@@ -101,10 +103,8 @@
             </div>
         </section>
     </main>
-
-    <script src="validation.min.js">
-        validation.init();
-    </script>
+    
+    <script src="dist/js/DatePickerX.min.js"></script>
     <script src="script.js"></script>
 
 </body>

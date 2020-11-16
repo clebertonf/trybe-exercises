@@ -41,4 +41,14 @@ function dropDown(estados) {
 }
 dropDown(estadosBr);
 
+function datePicker(){
+    let date = document.getElementById('data');
+date.DatePickerX.init();
+}
+
+datePicker();
+
+
+validation.init('#form');
+
 
