@@ -1,4 +1,3 @@
-//Falta validar algumas coisas de acorod com exercicio
 
 let estadosBr = [
     '',
@@ -48,7 +47,38 @@ date.DatePickerX.init();
 
 datePicker();
 
+function validateForm(){
+    validation.init("form");
+}
 
-validation.init('#form');
+validateForm();
 
+function MontarCv (){
+    let button = document.querySelector("#montar-cr");
+    button.addEventListener('click', function () {
+        let inputs = document.querySelectorAll('.pessoa');
+        let curriculo = document.querySelector('#curriculo');
 
+        for(let index = 0; index < inputs.length; index +=1){
+        let p = document.createElement('p');
+        p.innerText = inputs[index].value;
+        p.className = 'dados';
+        curriculo.appendChild(p);
+        }
+
+    });
+}
+
+MontarCv();
+
+function clear (){
+    let button = document.querySelector('#limpar');
+    button.addEventListener('click', function(){
+        let inputs = document.querySelectorAll('.pessoa');
+        let curriculo = document.querySelector('#curriculo');
+        curriculo.remove();
+        location.reload();
+    });
+}
+
+clear();
