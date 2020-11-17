@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="dist/validation.min.css">
+    <link rel="stylesheet" href="dist/DatePickerX.min.css">
+    <link rel="stylesheet" href="styles/bulma.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <main>
+        <header id="header">
+            <h5 class="title is-4">Cadastro de Currículo</h5>
+        </header>
+
+        <br>
+        <section class="dados-pessoais">
+            <div class="field">
+                <div class="control">
+                    <form >
+                        <h1 class="subtitle is-6">Dados Pessoais</h1>
+                        <p>Nome:</p>
+                        <input type="text" name="nome" class="pessoa input  validate" maxlength="40"
+                            data-validate="required">
+
+                        <p>E-mail:</p>
+                        <input type="text" name="" class="pessoa input validate" maxlength="50"
+                            data-validate="required, email">
+
+                        <p>CPF:</p>
+                        <input type="text" name="" class="pessoa input validate" maxlength="11"
+                            data-validate="required">
+
+                        <p>Endereço:</p>
+                        <input type="text" name="" class="pessoa input validate" maxlength="200"
+                            data-validate="required">
+
+                        <p>Cidade:</p>
+                        <input type="text" name="" class="pessoa input validate" maxlength="28"
+                            data-validate="required">
+
+                        <p>Estado:</p>
+                        <select id="estado" class="pessoa select input validate" data-validate="required">
+                        </select>
+                        <br>
+                        <br>
+
+                        <p>Tipo</p>
+                        <input type="radio" name="casa-ap" value="casa" id="casaValue">
+                        <label for="casaValue">casa</label>
+                        <br>
+                        <input type="radio" id="casaValue1" name="casa-ap" value="apartamento" class="radio">
+                        <label for="casaValue1">Apartamento</label>
+                        <br><br>
+                        <h1 class="subtitle is-6">Dados do ultimo emprego</h1>
+                        <p>Cargo</p>
+                        <input type="text" name="cargo" class="pessoa input validate" maxlength="40"
+                                data-validate="required">
+
+                        <p>Descrição do cargo</p>
+                        <textarea name="" class="pessoa textarea validate" cols="21" rows="5"
+                                data-validate="required"></textarea>
+
+                        <p>Resumo do currículo</p>
+                        <textarea name="" class="pessoa textarea validate" cols="30" rows="10" maxlength="1000" data-validate="required"></textarea>
+                        <p>Data de inicio</p>
+                        <input type="text" id="data" class="pessoa input">
+                            
+                    </form>
+                    <button id="montar-cr" class="button is-info is-outlined is-small">Montar Currículo</button>
+                    <button id="limpar" class="button is-danger is-outlined is-small">Limpar tudo</button>
+                </div>
+            </div>
+            <section id="curriculo">
+
+            </section>
+                
+
+        </section>
+        
+
+
+
+    </main>
+
+    <script src="dist/validation.min.js"></script>
+    <script src="dist/DatePickerX.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
