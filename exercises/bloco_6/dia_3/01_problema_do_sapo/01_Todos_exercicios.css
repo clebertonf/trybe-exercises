@@ -1,0 +1,85 @@
+/* Exercicio 01*/
+#pond {
+    display: flex;
+  justify-content:flex-end;
+  }
+
+/* execicio 02 */
+#pond {
+    display: flex;
+  justify-content: center;
+  }
+
+/* exercicio 03 */
+#pond {
+    display: flex;
+  justify-content:space-around;
+  }
+
+/* exercicio 04 */
+#pond {
+    display: flex;
+  justify-content:space-between;
+  }
+
+/* exercicio 05 */
+#pond {
+    display: flex;
+  align-items:flex-end;
+  }
+
+/* exercicio 06 */
+pond {
+    display: flex;
+  justify-content:center;
+  align-items:center;
+  }
+
+/* exercicio 07 */
+#pond {
+    display: flex;
+  justify-content:space-around;
+  align-items:flex-end;
+  }
+
+/* exercicio 08 */
+#pond {
+    display: flex;
+  flex-direction:row-reverse ;
+  }
+
+/* exercicio 09 */
+#pond {
+    display: flex;
+  flex-direction:column;
+  }
+
+  /* exercicio 10 */
+  #pond {
+    display: flex;
+  flex-direction:row-reverse;
+  justify-content: flex-end;
+  }
+
+/* exercicio 11 */
+#pond {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  }
+
+/* exercicio 12 */
+#pond {
+    display: flex;
+  flex-direction: column-reverse;
+  justify-content:space-between;
+  }
+
+  /* exercicio 13 */
+  #pond {
+    display: flex;
+  flex-direction:row-reverse;
+  justify-content:center;
+  align-items: flex-end;
+  }
+  
