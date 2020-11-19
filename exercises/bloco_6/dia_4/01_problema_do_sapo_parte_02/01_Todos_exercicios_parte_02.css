@@ -68,3 +68,26 @@ flex-flow: column wrap;
   flex-wrap: wrap;
 align-content:start;
 }
+
+/* exercicio 22 */
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+align-content:flex-end;
+}
+
+/* exercicio 23  */
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+flex-direction:column-reverse;
+align-content:center;
+}
+
+/* exercicio 24 */
+#pond{
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-content: space-between;
+}
