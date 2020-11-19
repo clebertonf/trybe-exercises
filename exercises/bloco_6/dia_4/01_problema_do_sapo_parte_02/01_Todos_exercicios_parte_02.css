@@ -1,1 +1,42 @@
 /* Exercicio 14 */
+#pond {
+    display: flex;
+  }
+  
+  .yellow {
+  order:1;
+  }
+
+/* exercicio 15 */
+#pond {
+    display: flex;
+  }
+  
+  .red {
+  order:-1;
+  }
+
+  /* execicio 16 */
+
+  #pond {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .yellow {
+  align-self: flex-end;
+  }
+
+/* exercicio 17 */
+
+#pond {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .yellow {
+  order:1;
+  align-self: flex-end;
+  }
+
+
