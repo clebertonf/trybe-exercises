@@ -1,0 +1,61 @@
+body {
+   
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    border-radius: 25px;
+    
+}
+
+figure {
+    margin: 0;
+}
+
+
+@media screen and (max-width:320px){
+    body{
+        font-size: 17px;
+        margin: 25px;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    figure{
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width:1012px){
+    body{
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .imagens{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    figure {
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width:1877px){
+    body{
+        background-color: blanchedalmond;
+        font-size: 35px;
+        margin: 100px;
+        max-width: 2000px;
+    }
+}
