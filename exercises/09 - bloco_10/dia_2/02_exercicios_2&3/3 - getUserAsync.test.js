@@ -18,18 +18,18 @@ const users = {
      }
  
      
-   describe('Testes da função getUsers', () => {
-     it('Se retorna um usuario', () => {
-       expect.assertions(1);
-      return getUserName(4).then(users => {
-         expect(users).toEqual('Mark');
-       });
+   describe('Testes da função getUsers ASYNC/AWAIT', () => {
+     it('Se retorna um usuario', async () => {
+       const user = await getUserName(4);
+       expect(user).toEqual('Mark');
      });
  
-     it('Se não retorna um usuario', () =>{
-       return getUserName(6).catch(error => {
-         expect(error).toEqual({ error: 'User with 6 not found.' })
-       });
+     it('Se não retorna um usuario', async () =>{
+      try{
+        await getUserName(7)
+      }catch (error) {
+        expect(error).toEqual({error: 'User with 7 not found.'});
+      }
      });
  
    });
