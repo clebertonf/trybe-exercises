@@ -114,10 +114,24 @@ describe('Exercicios dia 10.3 Jest', () => {
 
     });
 
-    test('Exercicio 06', () => {
+    describe(' Exercicio 06 Testanto a Requisição', () => {
+        mockFetchURL = jest.spyOn(functions, 'fetchURL');
+        afterEach(mockFetchURL.mockReset);
 
+        test('Testando no caso de resolvida', async () => {
+            mockFetchURL.mockResolvedValue('Requisição feita com sucesso!');
+
+            mockFetchURL();
+            expect(mockFetchURL).toHaveBeenCalled();
+            expect(mockFetchURL()).resolves.toBe('Requisição feita com sucesso!');
+        })
+        
+        test('Testando no caso de Rejeitada', () => {
+            mockFetchURL.mockRejectedValue('Requisição falhou!');
+
+            expect(mockFetchURL).rejects.toMatch('Requisição falhou!');
+
+        });
     });
-
-
 });
 

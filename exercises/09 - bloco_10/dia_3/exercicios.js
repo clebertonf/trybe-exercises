@@ -37,7 +37,14 @@ const firstLetter = (str) => str[0];
 
 const twoWords = (str1, str2) => `${str1} ${str2}`;
 
+function fetchURL() {
+   return fetch('https://dog.ceo/api/breeds/image/random').then((response) => {
+       response.json().then((data) => {
+        data.ok ? Promise.resolve(data) : Promise.reject(data);
+       })
+   })
+  }
 
 
+module.exports = {randomNumber, capsLock, firstLetter, twoWords, fetchURL};
 
-module.exports = {randomNumber, capsLock, firstLetter, twoWords};
