@@ -2,7 +2,7 @@ const functions = require("./exercicios");
 
 describe('Exercicios dia 10.3 Jest', () => {
 
-    test(' Exercicio 01 Testes da Função randomNumber', () => {
+    test('Exercicio 01 Testes da Função randomNumber', () => {
 
         functions.randomNumber = jest.fn().mockReturnValue(10);
     
@@ -31,7 +31,7 @@ describe('Exercicios dia 10.3 Jest', () => {
     
     });
     
-    test('exercicio 03', () => {
+    test('Exercicio 03', () => {
 
         // Modificando implementação
          mockRandomNumbers = jest.spyOn(functions, 'randomNumber')
@@ -53,7 +53,50 @@ describe('Exercicios dia 10.3 Jest', () => {
 
         expect(mockRandomNumbers).toHaveBeenCalled();
         expect(mockRandomNumbers(6)).toBe(12);
-
     });
+
+    test('Exercicio 04', () => {
+
+        //Function capsLock
+        mockCapsLock = jest.spyOn(functions, 'capsLock')
+        .mockImplementation((str) => str.toLowerCase());
+
+        mockCapsLock('CLEBERTON');
+
+        expect(mockCapsLock).toHaveBeenCalled();
+        expect(mockCapsLock).toHaveBeenLastCalledWith('CLEBERTON');
+        expect(mockCapsLock('CLEBERTON')).toEqual('cleberton');
+
+        //Function firstLetter
+        mockFirstLetter = jest.spyOn(functions, 'firstLetter')
+        .mockImplementation((str) => str[str.length -1])
+
+        mockFirstLetter('Francisco');
+
+        expect(mockFirstLetter).toHaveBeenCalled();
+        expect(mockFirstLetter).toHaveBeenLastCalledWith('Francisco');
+        expect(mockFirstLetter('Francisco')).toEqual('o');
+
+        // Function twoWords
+        mockTwoWords = jest.spyOn(functions, 'twoWords')
+        .mockImplementation((str1, str2, str3) => {
+            return `${str1} ${str2} ${str3}`
+        });
+
+        mockTwoWords('Cleberton', 'Francisco', 'Garcia');
+
+        expect(mockTwoWords).toHaveBeenCalled();
+        expect(mockTwoWords).toHaveBeenLastCalledWith('Cleberton', 'Francisco', 'Garcia');
+        expect(mockTwoWords('Cleberton', 'Francisco', 'Garcia')).toEqual('Cleberton Francisco Garcia');
+    });
+
+
+
+
+
+
+
+
+
 });
 
