@@ -88,14 +88,35 @@ describe('Exercicios dia 10.3 Jest', () => {
         expect(mockTwoWords).toHaveBeenCalled();
         expect(mockTwoWords).toHaveBeenLastCalledWith('Cleberton', 'Francisco', 'Garcia');
         expect(mockTwoWords('Cleberton', 'Francisco', 'Garcia')).toEqual('Cleberton Francisco Garcia');
+
+
+       
     });
 
+    
+    test('Exercicio 05', () => {
+
+        //Function capsLock
+        mockCapsLock = jest.spyOn(functions, 'capsLock')
+        .mockImplementation((str) => str.toLowerCase());
+
+        mockCapsLock('CLEBERTON');
+
+        expect(mockCapsLock).toHaveBeenCalled();
+        expect(mockCapsLock).toHaveBeenLastCalledWith('CLEBERTON');
+        expect(mockCapsLock('CLEBERTON')).toEqual('cleberton');
+        
+         //Resetando implementação
+         functions.capsLock.mockRestore();
+
+         expect(functions.capsLock('cleberton')).toBe('CLEBERTON');
 
 
+    });
 
+    test('Exercicio 06', () => {
 
-
-
+    });
 
 
 });
