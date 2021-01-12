@@ -5,7 +5,7 @@ function App() {
 
   const task = (value) => {
     return (
-      value.map(data => <li>{data}</li> )
+      value.map(data => <ul> <li> {data} </li> </ul>)
     );
   }
   return ( <div>
