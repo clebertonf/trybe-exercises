@@ -6,10 +6,10 @@ class Pokemon extends React.Component {
 
         return (
             <section>
+                    <img src={pokemon.image} alt='poke' className="image" />
                     <h3>{pokemon.name}</h3>
                     <h4>{pokemon.type}</h4>
                     <h4>Peso Medio: {pokemon.averageWeight.value}</h4>
-                    <img src={pokemon.image} alt='poke' className="image" />
             </section>
         )
     }
